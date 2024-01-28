@@ -13,12 +13,15 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:text="Login"
+
         tools:layout_editor_absoluteX="118dp"
         android:textSize="25dp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="20dp"
         tools:layout_editor_absoluteY="73dp" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -33,7 +36,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:id="@+id/name"
+            android:id="@+id/nameid"
             android:layout_height="60dp"
             android:inputType="text"
             android:background="@drawable/backgr"
@@ -42,25 +45,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        app:startIconDrawable="@drawable/baseline_alternate_email_24"
-        app:helperText="*Required"
-        app:helperTextTextColor="#F8F4F4"
-        android:layout_margin="15dp"
-        android:background="@drawable/backgr"
-        >
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:id="@+id/email"
-            android:background="@drawable/backgr"
-            android:inputType="textEmailAddress"
-            android:hint="Mail" />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -91,14 +76,5 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:background="@drawable/backgr"
-        android:text="Sign UP" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:id="@+id/goToLogin"
-        android:layout_height="wrap_content"
-        android:text="Already have an Acc?  Login "
-        android:layout_margin="20dp"
-        android:textColor="#F2F5F8"
-        android:paddingLeft="3dp" />
+        android:text="login" />
 </LinearLayout>
