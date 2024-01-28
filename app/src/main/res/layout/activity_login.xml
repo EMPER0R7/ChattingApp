@@ -27,9 +27,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        app:startIconDrawable="@drawable/baseline_person_24"
+        app:startIconDrawable="@drawable/baseline_alternate_email_24"
         app:helperText="*Required"
         app:helperTextTextColor="#FDF7F7"
+        android:inputType="textEmailAddress"
         android:layout_margin="15dp"
         android:background="@drawable/backgr"
         >
@@ -40,7 +41,7 @@
             android:layout_height="60dp"
             android:inputType="text"
             android:background="@drawable/backgr"
-            android:hint="Name" />
+            android:hint="Email" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
