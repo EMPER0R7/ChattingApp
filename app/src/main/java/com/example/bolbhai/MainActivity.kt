@@ -1,12 +1,13 @@
 package com.example.bolbhai
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.TextInputEditText
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -43,5 +44,10 @@ class MainActivity : AppCompatActivity() {
 
 
     }
-
+    override fun onStart() {
+        super.onStart()
+        if (FirebaseAuth.getInstance().currentUser != null) {
+            startActivity(Intent(this@MainActivity, Home::class.java))
+        }
+    }
 }
