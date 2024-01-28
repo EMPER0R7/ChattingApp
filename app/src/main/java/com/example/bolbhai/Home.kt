@@ -21,7 +21,7 @@ class Home : AppCompatActivity() {
             CurvedBottomNavigation.Model(3,"Profile",R.drawable.baseline_child_care_24)
         )
 
-        bottomNavigation.setOnClickListener {
+        bottomNavigation.setOnClickMenuListener {
             when(it.id){
                 1->{
                     replaceFragment(HomeFragment())
@@ -35,7 +35,7 @@ class Home : AppCompatActivity() {
             }
         }
         replaceFragment(HomeFragment())
-        bottomNavigation.show(2)
+        bottomNavigation.show(1)
 
     }
 
