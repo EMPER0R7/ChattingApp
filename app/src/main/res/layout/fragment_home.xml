@@ -11,7 +11,12 @@
         android:text="HEllo  home"
         android:textSize="33dp"/>
 
-
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="open Chat"
+        android:layout_margin="20dp"
+        android:id="@+id/openchat"/>
 
 
 </FrameLayout>
